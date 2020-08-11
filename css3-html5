@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 & CSS3</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+<style>
+body
+{
+  background: linear-gradient(45deg, #66ccff ,#3399ff ,#cc66ff,#ff4dc4 );
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-transform:capitalize;
+  font-family:Fugaz One;
+  
+}
+header{
+font-size:40px;
+font-family:Fugaz One;
+border:6px solid white;
+border-radius:25px;
+padding-left:20px;
+border-top-left-radius:0px;
+width:420px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#sub{
+font-size:20px;
+font-family:Calistoga;
+background:white;
+border:4px solid white;
+border-radius:12px;
+padding:0px 6px 0px 10px;
+border-top-left-radius:0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+display:inline-block;
+color:#3399ff;
+margin-bottom:2px;
+}
+nav ul{
+height:50px;
+width:97%;
+margin:4px;
+background:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:18px;
+}
+nav ul li{
+list-style:none;
+float:left;
+border:1px solid #66ccff;
+margin:6px;
+background:white;
+border-radius:18px;
+padding:4px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color:#66ccff
+}
+nav ul li:hover{
+box-shadow: 0 4px 8px 0 #66ccff, 0 6px 20px 0 #66ccff;
+
+}
+#div1{
+height:50px;
+width:500px;
+background:linear-gradient(45deg,#ff794d,#ffa64d,#ffd24d,#ffff4d,#d2ff4d,#a6ff4d,#4dff4d,#4dffa6,#4dffff,#4dd2ff,#4d79ff,#794dff,#d24dff,#ff4dff,#ff4d79,#ff4d4d);
+border:4px solid white;
+border-radius:30px;
+border-top-right-radius:0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#div2{
+height:200px;
+width:200px;
+background:radial-gradient(#bb33ff 55%,white );
+border:4px solid white;
+border-radius:100px;
+border-top-right-radius:4px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+float:right;
+margin-right:20px;
+margin-top:50px;
+}
+#div3{
+height:auto;
+width:200px;
+background:white;
+padding:4px;
+border:4px solid white;
+border-radius:10px;
+margin-top:40px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-shadow:2px 2px 4px pink;
+float:right;
+margin-right:20px;
+color:#aa00ff;
+word-wrap:break-word;
+}
+#div4{
+width:200px;
+background:linear-gradient(45deg,#66ccff,#aa00ff);
+padding:6px;
+border:0px;
+border-radius:10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+float:right;
+margin-right:250px;
+margin-top:80px;
+overflow:visible;
+white-space:nowrap;
+}
+#div5{
+width:200px;
+padding:4px;
+background:#66ccff;
+transition: background 4s linear,width 2s ease-in,border-radius 4s;
+float:right;
+margin-right:50px;
+margin-top:150px;
+}
+#div5:hover{
+background:#aa00ff;
+border-radius:20px;
+border:4px solid white;
+width:250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#div6{
+width:200px;
+height:200px;
+padding:4px;
+background:white;
+float:right;
+margin-right:80px;
+margin-top:80px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+animation-name:anime;
+animation-duration:8s;
+animation-timing-function:linear;
+animation-iteration-count:infinite;
+}
+@keyframes anime{
+0%{background:white;200px;border-radius:0px;}
+20%{background:#ffff66;border-radius:50px;}
+40%{background:#66ff66;border-radius:100px;}
+60%{background:	#6666ff;border-radius:100px;}
+80%{background:#ff6666;border-radius:50px;}
+100%{background:white;border-radius:0px;}
+}
+#div7{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+float:right;
+background:white;
+border-radius:4px;
+margin-right:30px;
+}
+img{
+height:150px;
+width:150px;
+margin:5px;
+}
+pre{
+font-family:Cutive Mono;
+border:6px solid white;
+border-radius:30px;
+padding:10px;
+border-top-right-radius:4px;
+width:auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-weight:bold;
+text-transform:lowercase;
+margin-right:45%;
+margin-left:12%;
+}
+form{
+width:500px;
+margin:0 auto;
+float:right;
+background:linear-gradient(to top ,#1A1A19,#313130,#373737);
+padding:10px;
+color:#EB565B;
+border:2px solid #EB565B;
+border-radius:14px;
+margin-top:60px;
+margin-right:30px;
+}
+input{
+width:200px;
+border:2px solid #EB565B;
+display:block;
+padding:6px;
+margin:4px;
+border-radius:14px;
+box-shadow:inset 0 0 4px #1A1A19;
+outline:none;
+}
+input:focus{
+box-shadow: 0 0 6px #EB565B;
+}
+</style>
+</head>
+<body>
+<header>HTML<samp style="color:#ff6666;font-size:40px;font-family:Fugaz One;">5</samp> & CSS<samp style="color:#ffff80;font-size:40px;font-family:Fugaz One;">3</samp> guide</header>
+<nav>
+<div>
+<ul>
+<a href="#1"><li>HTML5 new structure</li></a>
+<a href="#2"><li>HTML5 new tags</li></a>
+<a href="#3"><li>multimedia</li></a>
+<a href="#4"><li>div tag new attributes</li></a>
+<a href="#5"><li>text</li></a>
+<a href="#6"><li>transition</li></a>
+<a href="#7"><li>animation</li></a>
+<a href="#8"><li>filter</li></a>
+<a href="#9"><li>form</li></a>
+</div>
+</nav>
+<main style="clear:both;">
+<div id="sub"><a id="1"></a>features added to HTML5 </div><br>
+<pre>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>....&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;header>..to define header area..&lt;/header>
+&lt;nav>..navigation bar area..&lt;/nav>
+&lt;main>..define main context..
+&lt;section>
+&lt;article>&lt;/article>    	
+&lt;section>
+&lt;aside>..define a side area..&lt;/aside>
+&lt;/body>
+&lt;/html>
+</pre><br>
+<div id="sub"><a id="2"></a>new tags added to HTML5</div><br>
+<details style="float:right;padding: 4px;cursor: pointer;margin-right:100px ;">
+<summary style="outline:none;">..click here..</summary>
+<ul>
+<li>this page is a guide for 
+<li>HTML5
+<li>CSS3
+</ul>
+</details>
+<pre>
+&lt;details>
+&lt;summary>..click here..&lt;/summary>
+&lt;ul>
+&lt;li>this page is a guide for 
+&lt;li>HTML5
+&lt;li>CSS3
+&lt;/ul>
+&lt;/details>
+</pre>
+<figure style="float:right;cursor: pointer;margin-right:100px;margin-top:0px;">
+<img src="http://assets.stickpng.com/thumbs/5847fafdcef1014c0b5e48ce.png" style="height:200px;width:200px;">
+<figcaption>G-mail</figcaption>
+</figure>
+<pre>
+&lt;figure>
+&lt;img src="http://assets.stickpng.com/thumbs/5847.png"
+style="height:200px;width:200px;">
+&lt;figcaption>G-mail&lt;/figcaption>
+&lt;/figure>
+/*this is use to give cation to an image */
+/*this contain a by default margin*/
+</pre>
+<br>
+<br>
+<br>
+<br>
+<meter min="0" max="100" value="50" style="height:40px;width:200px;float:right;margin-right:20px;">loading...</meter>
+<pre>
+&lt;meter min="0" max="100" value="50" <br>style="height:40px;width:200px;float:right;margin-right:0px;">
+loading...&lt;/meter>
+</pre>
+<progress style="height:40px;width:200px;float:right;margin-right:20px;"></progress>
+<pre>
+/*you can also set max and value*/
+/*min value is zero by default*/
+&lt;progress 
+style="height:40px;width:200px;float:right;margin-right:20px;">
+progress bar&lt;/progress>
+</pre>
+<div id="sub"><a id="3"></a>multimedia tags</div><br>
+<div id="sub">audio tag</div><br>
+<audio controls muted loop preload="metadata" style="float:right; margin-right:20px;">
+<source src="https://archive.org/download/blitzentrapper2009-02-24.flac16/blitzentrapper2009-02-24t02_64kb.mp3" type="audio/mpeg">
+</audio>
+<pre>
+/*audio tag can also contain autoplay attribute*/
+/*which automatically play when page load*/
+&lt;audio controls muted loop preload="metadata" 
+style="float:right; margin-right:20px;">
+&lt;source src="https://archive.org/download
+/blitzentrapper2009-02-24.flac16/blitzentrapper.mp3"
+type="audio/mpeg">
+&lt;/audio>
+/*preload value can ve none and auto*/
+</pre>
+<div id="sub">video tag</div>
+<video  controls preload="metadata" poster="http://assets.stickpng.com/thumbs/5bc4adb27bdb7c06ad20c618.png" style="float:right;margin-right:20px;">
+<source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+</video>
+<pre>
+/*you can also apply audio tag attributes*/
+/*like autoplay, mute, preload */
+&lt;video controls preload="metadata"
+poster="http://assets.stickpng.com/thumbs/5bc4adb27bdb7c6.png">
+&lt;source src="https://www.learningcontainer.com
+/wp-content/uploads/2020/05/sample-mp4-file.mp4" 
+type="video/mp4">
+&lt;/video>
+</pre>
+<div id="sub"><a id="4"></a>new attributes added to div tag</div><br>
+<div id="sub">Gradient Background </div><br>
+<div id="sub">box shadow & border customization</div>
+<div id="div1" style="float:right;margin-top:100px;"></div>
+<pre>
+#div1{
+height:50px;
+width:500px;
+background:linear-gradient(45deg,#ff794d,#ffa64d,#ffd24d,
+			    #ffff4d,#d2ff4d,#a6ff4d,#4dff4d,
+                            #4dffa6,#4dffff,#4dd2ff,#4d79ff,
+                            #794dff,#d24dff,#ff4dff,#ff4d79,
+                            #ff4d4d);/*add any no. colors*/
+border:4px solid white;
+border-radius:30px;
+border-top-left-radius:0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*Instead of specifing the angle you can tell the direction */
+/*such as "to left","to right","to bottom"*/
+}
+</pre>
+<div id="sub">there is also radial-gradient</div><br>
+<div id="sub">and some more feature to shades</div>
+<div id="div2"></div>
+<pre>
+#div2{
+height:200px;
+width:200px;
+background:radial-gradient(#bb33ff 55%,white );
+/*you can add % after color*/
+border:4px solid white;
+border-radius:100px;
+border-top-right-radius:2px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</pre>
+<div id="sub"><a id="5"></a>text formatting in CSS3</div>
+<div id="div3">this will help you when the word is too long to and break it when it when it goes out of the box</div>
+<pre>
+word-wrap:break-word;
+text-shadow:2px 2px 4px pink;
+/*there is a property "word-break:break-all"
+this will break at any point line
+when width end even in middle of any word*/
+</pre>
+<div id="div4">the overflow is can be seen & the height don't increase. 
+</div>
+<pre>
+/*if you write hidden instead of visible 
+the text outside the box will hidden*/
+/*also you can add "text-overfloe:ellipsis" 
+this will put ".." when the text overflow*/
+overflow:visible;
+white-space:nowrap;
+</pre>
+<div id="sub"><a id="6"></a>transition effect</div>
+<div id="div5">..hover here..</div>
+<pre>
+#div5{
+width:200px;
+padding:4px;
+background:#66ccff;
+transition: background 4s linear,width 2s ease-in,
+border-radius 4s;
+/*in transition write the attributes define in hover*/
+/*also with time & way like linear and ease-in*/
+}
+#div5:hover{
+background:#aa00ff;
+border-radius:20px;
+border:4px solid white;
+width:250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</pre>
+<div id="sub"><a id="7"></a>animation</div>
+<div id="div6"></div>
+<pre>
+#div6{
+width:200px;
+height:200px;
+padding:4px;
+background:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
+animation-name:anime /*time can be defined here also*/;
+animation-duration:8s;
+animation-timing-function:linear;
+/*remove breaks in your animation*/
+/*other option can be ease-in, ease-out*/
+animation-iteration-count:infinite;
+/*no. of time the animayion repeat*/
+}
+/*for animation you have to create keyframes*/
+@keyframes anime{
+0%{background:white;200px;border-radius:0px;}
+20%{background:#ffff66;border-radius:50px;}
+40%{background:#66ff66;border-radius:100px;}
+60%{background:	#6666ff;border-radius:100px;}
+80%{background:#ff6666;border-radius:50px;}
+100%{background:white;border-radius:0px;}
+/*in place of % you can directly use from{} & to{}*/
+}
+</pre>
+<div id="sub"><a id="8"></a>some filter that you can apply on an image</div>
+<div id="div7">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" >
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:grayscale(100%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:contrast(200%);"><br>
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:invert(100%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:opacity(60%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:saturate(1000%);"><br>
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:blur(1px);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:sepia(100%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:hue-rotate(45deg);"><br>
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:brightness(150%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:brightness(50%);">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" style="filter:blur(1px) saturate(1000%) contrast(200%);">
+</div>
+<pre>
+/*inserting an image*/
+
+/*original image1*/
+&lt;img src="https://www.w3schools.com/colors/img_colormap.gif">
+
+/*filters*/
+
+/*image2*/
+filter:grayscale(100%);
+/*image3*/
+filter:contrast(200%);
+/*image4*/
+filter:invert(100%);
+/*image5*/
+filter:opacity(60%);
+/*image6*/
+filter:saturate(1000%);
+/*image7*/
+filter:blur(1px);
+/*image8*/
+filter:sepia(100%);
+/*image9*/
+filter:hue-rotate(45deg);
+/*image10*/
+filter:brightness(150%);
+/*image11*/
+filter:brightness(50%);
+/*you can apply multiple filter together*/
+/*image12*/
+filter:blur(1px) saturate(1000%) contrast(200%);
+/*if the filter don't work use -webkit-*/
+/*eg -webkit-filter:blur(1px);*/
+/*add this in your style*/
+/*it may vary for different bowser*/
+</pre>
+<div id="sub"><a id="9"></a>new features and input type added to form</div>
+<form>
+<h2>form features</h2>
+<hr style="background:#EB565B;height:4px;border:0px; border-radius:4px;">
+<label for="user">User Name</label>
+<input type="text" name="user" id="user" required placeholder="enter name here">
+<label for="pass">password</label>
+<input type="pasword" name="password" id="pass" required placeholder="enter password here">
+<label for="mail">e-mail</label>
+<input type="email" name="e-mail" id="mail" required placeholder="enter email address here">
+<label for="no">phone number</label>
+<input type="number" name="number" id="no" min="10" max="10">
+<label for="bd">birthday</label>
+<input type="date" name="bd" id="bd"required placeholder="enter birth date here">
+<label for="w">week</label>
+<input type="week" name="w" id="w">
+<label for="m">month</label>
+<input type="month" name="m" id="m">
+<label for="t">time</label>
+<input type="time" name="t" id="t">
+<label for="r">range</label>
+<input type="range" name="r" id="r" min="0"max="10"value="4" step="2">
+<label for="c">color</label>
+<input type="color" name="c" id="c">
+<label for="url">URL</label>
+<input type="url" name="url" id="url">
+<label for="con">country</label>
+<input list="country" id="con" name="con">
+<datalist id="country">
+<option>india</option>
+<option>USA</option>
+<option>Londan</option>
+<option>paris</option>
+<option>new york</option>
+<option>russia</option>
+</datalist>
+<input type="submit" value="submit form" style=" color:red;width:80%;height:40px;margin:0 auto;border:0px;border-radius:0px; box-shadow:1px 1px 4px blue;">
+</form>
+<pre>
+#css code
+form{
+width:500px;
+margin:0 auto;
+background:linear-gradient(to top ,#1A1A19,#313130,#373737);
+padding:10px;
+color:#EB565B;
+border:2px solid #EB565B;
+border-radius:14px;
+}
+input{
+width:200px;
+border:2px solid #EB565B;
+display:block;
+padding:6px;
+margin:4px;
+border-radius:14px;
+box-shadow:inset 0 0 4px #1A1A19;
+outline:none;
+}
+input:focus{
+box-shadow: 0 0 6px #EB565B;
+}
+#HTML code
+&lt;form>
+&lt;h2>form features&lt;/h2>
+&lt;hr style="background:#EB565B;height:4px;border:0px;
+border-radius:4px;">
+&lt;label for="user">User Name&lt;/label>
+&lt;input type="text" name="user" id="user" required 
+/*"autofocus" is used to bring the cursur automatically */
+placeholder="enter name here">
+&lt;label for="pass">password&lt;/label>
+&lt;input type="pasword" name="password" id="pass" required 
+placeholder="enter password here">
+&lt;label for="mail">e-mail&lt;/label>
+&lt;input type="email" name="e-mail" id="mail" required 
+placeholder="enter email address here">
+&lt;label for="no">phone number&lt;/label>
+&lt;input type="number" name="number" id="no" min="10" max="10">
+&lt;label for="bd">birthday&lt;/label>
+&lt;input type="date" name="bd" id="bd"required 
+placeholder="enter birth date here">
+&lt;label for="w">week&lt;/label>
+&lt;input type="week" name="w" id="w">
+&lt;label for="m">month&lt;/label>
+&lt;input type="month" name="m" id="m">
+&lt;label for="t">time&lt;/label>
+&lt;input type="time" name="t" id="t">
+&lt;label for="r">range&lt;/label>
+&lt;input type="range" name="r" id="r"
+min="0"max="10"value="4" step="2">
+&lt;label for="c">color&lt;/label>
+&lt;input type="color" name="c" id="c">
+&lt;label for="url">URL&lt;/label>
+&lt;input type="url" name="url" id="url">
+&lt;label for="con">country&lt;/label>
+&lt;input list="country" id="con" name="con">
+&lt;datalist id="country">
+&lt;option>india&lt;/option>
+&lt;option>USA&lt;/option>
+&lt;option>Londan&lt;/option>
+&lt;option>paris&lt;/option>
+&lt;option>new york&lt;/option>
+&lt;option>russia&lt;/option>
+&lt;/datalist>
+&lt;input type="submit" value="submit form" 
+style="width:80%;height:40px;margin:0 auto;
+border:0px;border-radius:0px; 
+box-shadow:1px 1px 4px blue;">
+&lt;/form>
+</pre>
+<div id="sub">enjoy and keep learing</div>
+</main>
+<footer>
+<hr style="width:95%;height:2px;background-color:white;border:0px;  border-radius: 2px;">
+<div style="text-align:center;font-size:10px;">
+♠  ♣  ♥  ♦ the webpage is entirly made using CSS3 and HTML5 ♦  ♥  ♣  ♠<br>
+♠  ♣  ♥  ♦ the page is design for educational and learing purpose ♦  ♥  ♣  ♠
+</div>
+<footer>
+</body>
+</html>
